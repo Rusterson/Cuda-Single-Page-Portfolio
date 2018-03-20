@@ -13,6 +13,18 @@ body {
   width: 1200px;
   position: relative; }
 
+a {
+  text-decoration: none; }
+
+.text {
+  font-size: 42px; }
+  .text__color--white {
+    color: #ffffff; }
+  .text__color--blue {
+    color: #3c4761; }
+  .text__color--black {
+    color: #393939; }
+
 .header {
   height: 100vh;
   text-align: center;
@@ -20,13 +32,45 @@ body {
   .header .container {
     display: flex;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    height: 100%; }
   .header__title {
     position: absolute;
-    left: 0; }
+    left: 0;
+    top: 0px;
+    font-size: 50px;
+    margin: 0; }
 
 .nav {
   position: absolute;
-  right: 0; }
+  right: 0;
+  top: 21px; }
+  .nav__link {
+    margin-right: 20px;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 5px 15px; }
+  .nav__link:hover {
+    background-color: #643a79; }
+
+.btn {
+  border: none;
+  width: 290px;
+  height: 66px;
+  border-bottom: 3px solid;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 60px; }
+  .btn__color--orange {
+    background-color: #eb7d4b;
+    border-color: #c86a40; }
+  .btn__color--cyan {
+    background-color: #17c2a4;
+    border-color: #14a58c; }
+  .btn__color--blue {
+    background-color: #30bae7;
+    border-color: #299ec5; }
 
 /*# sourceMappingURL=style.css.map */
