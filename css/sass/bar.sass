@@ -13,20 +13,60 @@
     &__icon
         align-content: center    
 
+        &:after
+            content:  ''
+            background-color: #ffffff
+            display: block
+            width: 23px
+            height: 3px
+            margin: 0 0 4px 8px
+
+        &:before
+            content: ''
+            background-color: #ffffff
+            display: block
+            width: 23px
+            height: 3px
+            margin: 4px 0 6px 8px
+
+
     &__top
         color: #ffffff
-        
+        position: relative
+
+        &:after
+            content: ''
+            border: solid #ffffff
+            border-width: 0 3px 3px 0
+            display: inline-block
+            padding: 5px
+            transform: rotate(-135deg)
+            position: absolute
+            right: 13px
+            top: -6px
+
+
+        &:before
+            content: ''
+            width: 23px
+            display: block
+            height: 3px
+            background-color: #ffffff
+            right: 8px
+            top: -12px
+            position: absolute
+
+        &--arrow
+            display: block
+            width: 3px
+            height: 20px
+            background-color: #ffffff
+            position: absolute
+            top: -6px
+            right: 18px
+
     &__icone
-        background-color: #ffffff
-        display: block
-        width: 20px
-        height: 3px
-        margin: 4px 0 4px 8px
-
-        &--before
-
-        &--after
-            
+         
 
     &__list
         display: none
