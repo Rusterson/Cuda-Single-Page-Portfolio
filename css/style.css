@@ -29,7 +29,8 @@ ul {
     color: #393939; }
   @media (max-width: 767px) {
     .text {
-      font-size: 7vw; } }
+      font-size: 7vw;
+      margin: 0 5%; } }
 
 .header {
   height: 100vh;
