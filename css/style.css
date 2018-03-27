@@ -16,6 +16,9 @@ body {
 a {
   text-decoration: none; }
 
+ul {
+  list-style: none; }
+
 .text {
   font-size: 42px; }
   .text--white {
@@ -25,23 +28,6 @@ a {
   .text--black {
     color: #393939; }
 
-@media (max-width: 767px) {
-  .header {
-    display: flex; }
-    .header__title {
-      margin-left: 5px;
-      position: static !important; }
-    .header__container {
-      flex-wrap: wrap !important; }
-
-  .text {
-    font-size: 5vw; }
-
-  .hero {
-    display: inline; }
-
-  .nav {
-    position: static !important; } }
 .header {
   height: 100vh;
   text-align: center;
