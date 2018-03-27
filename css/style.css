@@ -44,11 +44,17 @@ ul {
     font-size: 50px;
     margin: 0;
     color: #ffffff; }
+    @media (max-width: 767px) {
+      .header__title {
+        display: none; } }
 
 .nav {
   position: absolute;
   right: 0;
   top: 16px; }
+  @media (max-width: 767px) {
+    .nav {
+      display: none; } }
   .nav__link {
     margin-right: 20px;
     color: #ffffff;
@@ -83,5 +89,15 @@ ul {
   .btn--blue {
     background-color: #30bae7;
     border-color: #299ec5; }
+
+.bar {
+  background-color: #333333;
+  display: none;
+  height: 50px;
+  position: fixed;
+  width: 100%; }
+  @media (max-width: 767px) {
+    .bar {
+      display: block; } }
 
 /*# sourceMappingURL=style.css.map */
