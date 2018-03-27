@@ -1,13 +1,18 @@
 .nav
     position: absolute
     right: 0
-    top: 21px
+    top: 16px
 
     &__link
         margin-right: 20px
         color: #ffffff
         border-radius: 4px
         padding: 5px 15px
+        display: inline-block
+        transition: background 300ms ease
 
-    &__link:hover
-        background-color: #643a79
+        &:last-child
+            margin-right: 0
+
+        &:hover
+            background-color: #643a79

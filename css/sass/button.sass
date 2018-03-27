@@ -8,16 +8,20 @@
     cursor: pointer
     font-size: 18px
     margin-top: 60px
+    transition: transform 500ms ease
 
-    &__color--orange
+    &:active 
+        transform: translateY(3px)
+
+    &--orange
         background-color: #eb7d4b
         border-color: #c86a40
 
-    &__color--cyan
+    &--cyan
         background-color: #17c2a4
         border-color: #14a58c
 
-    &__color--blue
+    &--blue
         background-color: #30bae7
         border-color: #299ec5
     

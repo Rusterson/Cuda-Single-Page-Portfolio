@@ -1,3 +1,5 @@
+$tablet: 991px
+$mobile: 767px
 *,
 *:before,
 *:after 
@@ -19,11 +21,31 @@ a
 .text
     font-size: 42px
  
-    &__color--white
+    &--white
         color: #ffffff
 
-    &__color--blue
+    &--blue
         color: #3c4761
 
-    &__color--black
+    &--black
         color: #393939
+
+@media (max-width: $mobile)
+    .header
+        display: flex
+
+        &__title
+            margin-left: 5px
+            position: static !important
+
+        &__container
+            flex-wrap: wrap !important
+                    
+    .text
+        font-size: 5vw
+
+    .hero
+        display: inline
+
+    .nav
+        position: static !important
