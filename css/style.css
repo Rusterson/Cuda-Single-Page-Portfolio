@@ -110,10 +110,16 @@ ul {
   align-items: center; }
   .bar__logo {
     color: #ffffff; }
+  .bar__icon {
+    align-content: center; }
   .bar__top {
     color: #ffffff; }
   .bar__icone {
-    color: #ffffff; }
+    background-color: #ffffff;
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin: 4px 0 4px 8px; }
   .bar__list {
     display: none; }
   @media (max-width: 767px) {
