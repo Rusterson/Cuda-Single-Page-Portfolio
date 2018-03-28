@@ -107,9 +107,12 @@ ul {
   position: fixed;
   width: 100%;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  z-index: 1; }
   .bar__logo {
-    color: #ffffff; }
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700; }
   .bar__icon {
     align-content: center; }
     .bar__icon:after {
@@ -130,7 +133,8 @@ ul {
       border-radius: 80px; }
   .bar__top {
     color: #ffffff;
-    position: relative; }
+    position: relative;
+    width: 31px; }
     .bar__top:after {
       content: "";
       border: solid #ffffff;
