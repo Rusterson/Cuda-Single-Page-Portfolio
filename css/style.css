@@ -121,7 +121,7 @@ ul {
       display: block;
       width: 23px;
       height: 3px;
-      margin: 0 0 4px 8px;
+      margin: 0 0 0 8px;
       border-radius: 80px; }
     .bar__icon:before {
       content: "";
@@ -129,12 +129,12 @@ ul {
       display: block;
       width: 23px;
       height: 3px;
-      margin: 4px 0 6px 8px;
+      margin: 0 0 8px 8px;
       border-radius: 80px; }
   .bar__top {
     color: #ffffff;
     position: relative;
-    width: 31px; }
+    width: 32px; }
     .bar__top:after {
       content: "";
       border: solid #ffffff;
@@ -144,7 +144,7 @@ ul {
       transform: rotate(-135deg);
       position: absolute;
       right: 13px;
-      top: -6px; }
+      top: -5px; }
     .bar__top:before {
       content: "";
       width: 23px;
