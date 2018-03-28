@@ -100,9 +100,10 @@
         </div>
     </footer>
     <script src="main.js"></script>
-    <script>document.getElementsByTagName('top')[0].onclick = function () {
-            scrollTo(document.body, 0, 1250);   
-         }
+    <script>document.getElementsById('top').onclick = function (e) {
+        e.preventDefault();
+                    scrollTo(document.body, 0, 1250);   
+                 }
              
          function scrollTo(element, to, duration) {
              var start = element.scrollTop,
@@ -130,6 +131,7 @@
              if (t < 1) return c/2*t*t + b;
              t--;
              return -c/2 * (t*(t-2) - 1) + b;
-         };</script>
+         };
+         </script>
 </body>
 </html>
