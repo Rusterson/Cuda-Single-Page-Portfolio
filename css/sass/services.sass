@@ -1,27 +1,38 @@
 .services
     background-color: #17c2a4
-    height: 100vh
     text-align: center
+
+    &__icons
+        @media (max-width: $mobile)
+            height: 20vw
 
     &__content
         display: flex
         justify-content: space-between
         align-items: flex-start
+        @media (max-width: $mobile)
+            flex-wrap: wrap
+            justify-content: center
 
     &__column
         width: 260px
         padding: 0 22px
+        @media (max-width: $mobile)
+            margin-top: 8vw
 
     &__subtitle
         color: #ffffff
         font-size: 24px
         margin-bottom: 22px
         margin-top: 45px
+        @media (max-width: $mobile)
+            margin: 2vw 0
+            font-size: 6vw
+
 
     &__title
         letter-spacing: 2px
         padding-top: 100px
-
 
         &:after
             content: ''
@@ -41,9 +52,14 @@
             font-size: 16px
             line-height: 23px
             letter-spacing: 1px
+            @media (max-width: $mobile)
+                font-size: 4vw
             
         &--above
             width: 580px
             margin: 0 auto
             line-height: 27px
             margin-bottom: 90px
+            @media (max-width: $mobile)
+                width: auto
+                margin: 0 10%
