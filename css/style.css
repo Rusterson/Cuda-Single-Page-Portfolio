@@ -101,7 +101,7 @@ ul {
     border-color: #299ec5; }
 
 .bar {
-  background-color: #333333;
+  background-color: rgba(0, 0, 0, 0.8);
   display: none;
   height: 50px;
   position: fixed;
@@ -165,7 +165,20 @@ ul {
       right: 18px;
       border-radius: 80px; }
   .bar__list {
-    display: none; }
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.91);
+    position: absolute;
+    padding: 50px; }
+  .bar__item {
+    display: block;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.37);
+    margin-bottom: 36px;
+    padding-bottom: 21px; }
+  .bar__link {
+    color: #ffffff;
+    font-size: 22px; }
   @media (max-width: 767px) {
     .bar {
       display: flex; } }
