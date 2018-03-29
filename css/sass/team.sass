@@ -1,0 +1,76 @@
+.team
+    text-align: center
+    background-color: #e7f1f8
+
+    &__title 
+        &:after
+            content: ''
+            display: block
+            width: 90px
+            height: 4px
+            border-radius: 80px
+            background-color: rgba(0, 0, 0, 0.2)
+            margin: 20px auto
+
+    &__content
+        display: flex
+        padding-bottom: 100px
+        margin-top: 80px
+        @media (max-width: $mobile)
+            flex-wrap: wrap
+            margin-top: 40px
+            
+
+    &__photo
+        display: block
+        width: 200px
+        height: 200px
+        background-color: #878787
+        border-radius: 100px
+        margin: 0 auto
+        @media (max-width: $mobile)
+            height: 30vw
+            width: 30vw
+
+    &__social
+        display: flex
+        justify-content: center
+        margin-top: 30px
+        @media (max-width: $mobile)
+            margin-top: 12px
+
+    &__column
+        display: block
+        @media (max-width: $mobile)
+            margin-top: 30px
+        
+    &__text
+        font-size: 18.5px
+        
+    &__subtitle
+        font-size: 24px
+        margin-top: 40px
+        margin-bottom: 10px
+        @media (max-width: $mobile)
+            font-size: 6vw
+            margin-top: 13px
+            margin-bottom: 5px
+
+    &__box
+        margin-top: 20px
+        font-size: 16px
+        letter-spacing: 1px
+        line-height: 23px
+        padding: 0 33px
+        @media (max-width: $mobile)
+            font-size: 4vw
+            line-height: normal
+            letter-spacing: normal
+            margin-top: 10px
+
+    &__svg
+        fill: #bdd1df
+
+
+    &__link
+        margin: 0 5px
