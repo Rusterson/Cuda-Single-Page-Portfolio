@@ -277,7 +277,8 @@ ul {
     @media (max-width: 767px) {
       .team__content {
         flex-wrap: wrap;
-        margin-top: 40px; } }
+        margin-top: 40px;
+        padding-bottom: 20%; } }
   .team__photo {
     display: block;
     width: 200px;
@@ -328,5 +329,55 @@ ul {
     fill: #bdd1df; }
   .team__link {
     margin: 0 5px; }
+
+.skills {
+  background-color: #ffffff;
+  text-align: center; }
+  .skills__container {
+    padding-top: 100px; }
+  .skills__title:after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    border-radius: 80px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 20px auto; }
+  .skills__subtitle {
+    font-size: 24px;
+    margin-top: 30px; }
+    @media (max-width: 767px) {
+      .skills__subtitle {
+        margin-top: 5px;
+        font-size: 6vw; } }
+  .skills__text {
+    font-size: 18px;
+    padding: 0 265px;
+    line-height: 27px; }
+    @media (max-width: 767px) {
+      .skills__text {
+        padding: 0;
+        margin: 0 5%; } }
+  .skills__graph {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    padding-bottom: 100px; }
+    @media (max-width: 767px) {
+      .skills__graph {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px; } }
+  .skills__column {
+    position: relative; }
+    @media (max-width: 767px) {
+      .skills__column {
+        margin-top: 50px; } }
+  .skills__value {
+    font-size: 50px;
+    position: absolute;
+    font-weight: 300;
+    top: 55px;
+    right: 38px; }
 
 /*# sourceMappingURL=style.css.map */
