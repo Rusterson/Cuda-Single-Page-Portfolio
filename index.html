@@ -11,10 +11,10 @@
 </head>
 <body>
     <div class="bar">
-        <div class="bar__menu">
-            <a class="bar__icon" href="#"></a>
+        <div class="bar__menu" id="menu">
+            <a class="bar__icon" id="icon" href="#"></a>
             <div class="bar__content"></div>
-            <ul class="bar__list">
+            <ul class="bar__list" id="list">
                 <li class="bar__item"><a class="bar__link" href="#">HOME</a></li>
                 <li class="bar__item"><a class="bar__link" href="#">ABOUT</a></li>
                 <li class="bar__item"><a class="bar__link" href="#">WORK</a></li>
@@ -99,7 +99,6 @@
             
         </div>
     </footer>
-    <script src="main.js"></script>
     <script>
         document.getElementById('top').onclick = function (e) {
             e.preventDefault();
@@ -134,5 +133,20 @@ Math.easeInOutQuad = function (t, b, c, d) {
 	return -c/2 * (t*(t-2) - 1) + b;
 };
     </script>
+    <script>
+                 
+           document.getElementById('menu').onclick = menuCheck;
+
+       function menuCheck (){
+       var list = document.getElementById('list');
+        if (list.style.display === 'none') {
+            return list.style.display = 'block';
+        } else {
+            return list.style.display = 'none'
+        }
+       }
+       
+    </script>
+    <script src="main.js"></script>
 </body>
 </html>
