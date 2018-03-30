@@ -14,7 +14,7 @@
         <div class="bar__menu" id="menu">
             <a class="bar__icon" id="icon" href="#"></a>
             <div class="bar__content"></div>
-            <ul class="bar__list" id="list">
+            <ul class="bar__list">
                 <li class="bar__item"><a class="bar__link" href="#">HOME</a></li>
                 <li class="bar__item"><a class="bar__link" href="#">ABOUT</a></li>
                 <li class="bar__item"><a class="bar__link" href="#">WORK</a></li>
@@ -153,7 +153,41 @@
     </section>
     <section class="portfolio">
         <div class="container">
-            
+            <h2 class="portfolio__title title black">OUR PORTFOLIO</h2>
+            <p class="portfolio__text black">Neque porro quisquam est, do lorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam</p>
+            <div class="portfolio__links">
+                <a href="" class="portfolio__link">ALL</a>
+                <a href="" class="portfolio__link">WEB</a>
+                <a href="" class="portfolio__link">APPS</a>
+                <a href="" class="portfolio__link">ICONS</a>
+            </div>
+            <ul class="portfolio__hero">
+                <li class="portfolio__box">
+                    <a href="" class="portfolio__content">
+                        <img src="./img/isom.png" alt="" class="portfolio__pc">
+                    </a>
+                    <p class="portfolio__subtitle">ISOMETRIC PERSPECTIVE MOCKU-UP</p>
+                </li>
+                <li class="portfolio__box">
+                    <a href="" class="portfolio__content">
+                        <img src="./img/time.png" alt="" class="portfolio__pc">
+                    </a>
+                    <p class="portfolio__subtitle">TIME ZONE APP UI</p>
+                </li>
+                <li class="portfolio__box">
+                    <a href="" class="portfolio__content">
+                        <img src="./img/viro.png" alt="" class="portfolio__pc">
+                    </a>
+                    <p class="portfolio__subtitle">VIRO MEDIA PLAYERS UI</p>
+                </li>
+                <li class="portfolio__box">
+                    <a href="" class="portfolio__content">
+                        <img src="./img/blog.png" alt="" class="portfolio__pc">
+                    </a>
+                    <p class="portfolio__subtitle">BLOG / MAGAZINE FLAT UI KIT</p>
+                </li>
+            </ul>
+            <button class="portfolio__btn btn btn--cyan">LOAD MORE PROJECTS</button>
         </div>
     </section>
     <section class="about">
@@ -172,52 +206,15 @@
         </div>
     </footer>
     <script>
-        document.getElementById('top').onclick = function (e) {
-            e.preventDefault();
-   scrollTo(document.body, 0, 1250);   
-}
-    
-function scrollTo(element, to, duration) {
-    var start = element.scrollTop,
-        change = to - start,
-        currentTime = 0,
-        increment = 20;
-        
-    var animateScroll = function(){        
-        currentTime += increment;
-        var val = Math.easeInOutQuad(currentTime, start, change, duration);
-        element.scrollTop = val;
-        if(currentTime < duration) {
-            setTimeout(animateScroll, increment);
-        }
-    };
-    animateScroll();
-}
-
-//t = current time
-//b = start value
-//c = change in value
-//d = duration
-Math.easeInOutQuad = function (t, b, c, d) {
-  t /= d/2;
-	if (t < 1) return c/2*t*t + b;
-	t--;
-	return -c/2 * (t*(t-2) - 1) + b;
-};
+   
     </script>
     <script>
-                 
-           document.getElementById('menu').onclick = menuCheck;
-
-       function menuCheck (){
-       var list = document.getElementById('list');
-        if (list.style.display === 'none') {
-            return list.style.display = 'block';
-        } else {
-            return list.style.display = 'none'
-        }
-       }
-       
+        var menu = document.getElementById('menu');
+        var list = document.getElementsByClassName('bar__list')[0];
+        
+        menu.addEventListener("click", function(){
+            list.classList.toggle("menu-open");
+        });
     </script>
     <script src="main.js"></script>
 </body>
