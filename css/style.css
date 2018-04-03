@@ -53,9 +53,17 @@ ul {
     .blue3 {
       font-size: 5vw; } }
 
-.menu-open {
-  display: block !important;
+.menu-open .bar__list {
+  display: block;
   z-index: -1; }
+.menu-open body {
+  overflow: hidden; }
+
+#circle {
+  stroke-width: 8;
+  fill: #fcfcfc;
+  stroke-dasharray: 580;
+  stroke-dashoffset: 580; }
 
 .header {
   height: 100vh;
@@ -388,7 +396,32 @@ ul {
     font-weight: 300;
     top: 55px;
     right: 38px; }
-
+  .skills__circle {
+    transform: rotate(-90deg); }
+  .skills__v1 {
+    stroke: #30bae7;
+    animation: complete1 1.9s ease-in-out forwards; }
+@keyframes complete1 {
+  to {
+    stroke-dashoffset: 58; } }
+  .skills__v2 {
+    stroke: #d74680;
+    animation: complete2 1.5s ease-in-out forwards; }
+@keyframes complete2 {
+  to {
+    stroke-dashoffset: 145; } }
+  .skills__v3 {
+    stroke: #15c7a8;
+    animation: complete3 1.4s ease-in-out forwards; }
+@keyframes complete3 {
+  to {
+    stroke-dashoffset: 174; } }
+  .skills__v4 {
+    stroke: #eb7d4b;
+    animation: complete4 1.7s ease-in-out forwards; }
+@keyframes complete4 {
+  to {
+    stroke-dashoffset: 87; } }
 .portfolio {
   background-color: #ffdd99;
   text-align: center; }
@@ -569,7 +602,7 @@ ul {
         margin: 0 auto;
         width: 100vw;
         flex-direction: column;
-        margin-top: 15px; } }
+        margin-top: 20px; } }
     .contact__box--name {
       width: 400px;
       height: 55px;
@@ -581,10 +614,9 @@ ul {
         padding-left: 10px; }
       @media (max-width: 767px) {
         .contact__box--name {
-          width: 40vw;
+          width: 70vw;
           height: 8vw;
-          margin-top: 10px;
-          margin-right: 30vw; } }
+          margin: auto; } }
     .contact__box--email {
       width: 400px;
       height: 55px;
@@ -596,10 +628,9 @@ ul {
         padding-left: 10px; }
       @media (max-width: 767px) {
         .contact__box--email {
-          width: 40vw;
+          width: 70vw;
           height: 8vw;
-          margin-top: 10px;
-          margin-right: 30vw; } }
+          margin: 15px auto; } }
     .contact__box--message {
       width: 820px;
       height: 210px;
@@ -609,12 +640,13 @@ ul {
       margin-top: 25px; }
       .contact__box--message::placeholder {
         color: #ffffff;
-        padding-left: 10px; }
+        padding-left: 10px;
+        padding-top: 10px; }
       @media (max-width: 767px) {
         .contact__box--message {
           width: 70vw;
           height: 27vw;
-          margin-top: 10px; } }
+          margin: auto; } }
   .contact__title:after {
     content: "";
     display: block;

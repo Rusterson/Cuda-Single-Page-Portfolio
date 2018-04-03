@@ -54,3 +54,35 @@
         font-weight: 300
         top: 55px
         right: 38px
+
+    &__circle
+        transform: rotate(-90deg)
+
+    &__v1
+        stroke: #30bae7
+        animation: complete1 1.9s ease-in-out forwards
+        @keyframes complete1
+            to
+                stroke-dashoffset: 58
+    
+    &__v2
+        stroke: #d74680
+        animation: complete2 1.5s ease-in-out forwards
+        @keyframes complete2
+            to
+                stroke-dashoffset: 145
+
+    &__v3
+        stroke: #15c7a8
+        animation: complete3 1.4s ease-in-out forwards
+        @keyframes complete3
+            to
+                stroke-dashoffset: 174
+
+
+    &__v4
+        stroke: #eb7d4b
+        animation: complete4 1.7s ease-in-out forwards
+        @keyframes complete4
+            to
+                stroke-dashoffset: 87

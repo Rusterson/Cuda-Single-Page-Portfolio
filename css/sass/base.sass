@@ -52,8 +52,19 @@ ul
     @media (max-width: $mobile)
         font-size: 5vw
     
-.menu-open
-    display: block !important
-    z-index: -1
+.menu-open 
+    .bar__list
+        display: block 
+        z-index: -1
 
-  
+    body
+        overflow: hidden
+
+#circle 
+    stroke-width: 8
+    fill: #fcfcfc
+    stroke-dasharray: 580
+    stroke-dashoffset: 580
+    
+
+
