@@ -56,9 +56,20 @@ ul
     .bar__list
         display: block 
         z-index: -1
+        height: 100vh
 
     body
         overflow: hidden
+
+    .bar__icon:after 
+        transform: rotate(45deg)
+        transition: transform 0.4s linear 0.2s, top 0.195s linear
+        top: 25px
+
+    .bar__icon:before
+        transform: rotate(-45deg)
+        transition: transform 0.4s linear 0.2s, top 0.195s linear
+        top: 25px
 
 #circle 
     stroke-width: 8

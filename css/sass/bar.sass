@@ -13,6 +13,11 @@
         font-size: 30px
         font-weight: 700
 
+    &__menu
+        height: 50px
+        width: 50px
+        position: relative
+
     &__icon
         align-content: center    
 
@@ -22,8 +27,11 @@
             display: block
             width: 23px
             height: 3px
-            margin: 0 0 0 8px
+            position: absolute
             border-radius: 80px
+            transition: transform 0.195s linear, top 0.4s linear 0.2s
+            top: 19px
+            left: 8px
 
         &:before
             content: ''
@@ -31,8 +39,11 @@
             display: block
             width: 23px
             height: 3px
-            margin: 0 0 8px 8px
+            position: absolute
             border-radius: 80px
+            transition: transform 0.195s linear, top 0.4s linear 0.2s
+            top: 31px
+            left: 8px
 
 
     &__top
@@ -79,10 +90,11 @@
     &__list
         display: none 
         width: 100vw
-        height: 100vh
+        height: 10vh
         background-color: rgba(0,0,0,0.91)
         position: absolute
         padding: 50px
+        transition: height 0.5s linear
 
     &__item
         display: block
