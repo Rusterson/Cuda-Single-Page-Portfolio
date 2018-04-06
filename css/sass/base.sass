@@ -18,6 +18,7 @@ body
         width: 100vw
     @media (max-width: 1200px)
         width: 100vw
+       
 
 a 
     text-decoration: none
@@ -33,6 +34,8 @@ ul
         font-size: 7vw
         margin: 0 5%
         padding: 20% 0 0 0
+    @media (max-width: $tablet)
+        font-size: 5.5vw
         
  
 .white
@@ -51,6 +54,8 @@ ul
     color: #30bae7
     @media (max-width: $mobile)
         font-size: 5vw
+    @media (max-width: $tablet)
+        font-size: 3.5vw
     
 .menu-open 
     .bar__list
@@ -80,5 +85,18 @@ ul
     stroke-dasharray: 580
     stroke-dashoffset: 580
     
+@keyframes complete1
+    to
+        stroke-dashoffset: 58
 
+@keyframes complete2
+    to
+        stroke-dashoffset: 145
 
+@keyframes complete3
+    to
+        stroke-dashoffset: 174
+
+@keyframes complete4
+    to
+        stroke-dashoffset: 87

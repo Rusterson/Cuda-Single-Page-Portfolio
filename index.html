@@ -129,30 +129,38 @@
             <p class="skills__text blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <ul class="skills__graph">
                 <li class="skills__column">
-                    <svg class="skills__circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="160" heigh="160">
-                    <circle id="circle" class="skills__v1"  cx="96" cy="96" r="92"/>
-                    </svg>
+                    <div class="skills__box">
+                        <svg class="skills__circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="160" heigh="160">
+                        <circle id="circle" class="skills__v1"  cx="96" cy="96" r="92"/>
+                        </svg>
+                    </div>
                     <p class="skills__value blue" id="v1"></p>
                     <h3 class="skills__subtitle blue">WEB DESIGN</h3>
                 </li>
                 <li class="skills__column">
-                    <svg class="skills__circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="160" heigh="160">
-                    <circle id="circle" class="skills__v2" cx="96" cy="96" r="92"/>
-                    </svg>
+                    <div class="skills__box">
+                        <svg class="skills__circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="160" heigh="160">
+                        <circle id="circle" class="skills__v2" cx="96" cy="96" r="92"/>
+                        </svg>
+                    </div>
                     <p class="skills__value blue" id="v2"></p>
                     <h3 class="skills__subtitle blue">HTML / CSS</h3>
                 </li>
                 <li class="skills__column">
-                    <svg class="skills__circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="160" heigh="160">
-                    <circle id="circle" class="skills__v3" cx="96" cy="96" r="92"/>
-                    </svg>
+                    <div class="skills__box">
+                        <svg class="skills__circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="160" heigh="160">
+                        <circle id="circle" class="skills__v3" cx="96" cy="96" r="92"/>
+                        </svg>
+                    </div>
                     <p class="skills__value blue" id="v3"></p>
                     <h3 class="skills__subtitle blue">GRAPHIC DESIGN</h3>
                 </li>
                 <li class="skills__column">
-                    <svg class="skills__circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="160" heigh="160">
-                    <circle id="circle" class="skills__v4" cx="96" cy="96" r="92"/>
-                    </svg>
+                    <div class="skills__box">
+                        <svg class="skills__circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="160" heigh="160">
+                        <circle id="circle" class="skills__v4" cx="96" cy="96" r="92"/>
+                        </svg>
+                    </div>
                     <p class="skills__value blue" id="v4"></p>
                     <h3 class="skills__subtitle blue">UI / UX</h3>
                 </li>
@@ -263,27 +271,7 @@
         </div>
     </footer>
     <script src="./js/back-top.js"></script>
-    <script>
-        let value1 = document.getElementById('v1')
-        let value2 = document.getElementById('v2')
-        let value3 = document.getElementById('v3')
-        let value4 = document.getElementById('v4')
-
-        function countTo(number, value) {
-            let count = 0
-
-            setInterval(function() {
-                if(count < number) count++
-                value.textContent = count + '%'
-            },18)
-        };
-
-        countTo(90, value1);
-        countTo(75, value2);
-        countTo(70, value3);
-        countTo(85, value4);
-
-    </script>
+    <script src="./js/animation.js"></script>
     <script>
         var menu = document.getElementById('menu');
         var html = document.getElementsByTagName('html')[0];

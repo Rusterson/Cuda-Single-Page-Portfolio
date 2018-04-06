@@ -34,6 +34,9 @@ ul {
       font-size: 7vw;
       margin: 0 5%;
       padding: 20% 0 0 0; } }
+  @media (max-width: 991px) {
+    .title {
+      font-size: 5.5vw; } }
 
 .white {
   color: #ffffff; }
@@ -52,6 +55,9 @@ ul {
   @media (max-width: 767px) {
     .blue3 {
       font-size: 5vw; } }
+  @media (max-width: 991px) {
+    .blue3 {
+      font-size: 3.5vw; } }
 
 .menu-open .bar__list {
   opacity: 1;
@@ -76,6 +82,18 @@ ul {
   stroke-dasharray: 580;
   stroke-dashoffset: 580; }
 
+@keyframes complete1 {
+  to {
+    stroke-dashoffset: 58; } }
+@keyframes complete2 {
+  to {
+    stroke-dashoffset: 145; } }
+@keyframes complete3 {
+  to {
+    stroke-dashoffset: 174; } }
+@keyframes complete4 {
+  to {
+    stroke-dashoffset: 87; } }
 .header {
   height: 100vh;
   text-align: center;
@@ -390,6 +408,9 @@ ul {
       .skills__subtitle {
         margin-top: 5px;
         font-size: 6vw; } }
+    @media (max-width: 991px) {
+      .skills__subtitle {
+        font-size: 4vw; } }
   .skills__text {
     font-size: 18px;
     padding: 0 265px;
@@ -398,6 +419,9 @@ ul {
       .skills__text {
         padding: 0;
         margin: 0 5%; } }
+  .skills__box {
+    height: 160px;
+    width: 160px; }
   .skills__graph {
     display: flex;
     justify-content: space-between;
@@ -409,6 +433,9 @@ ul {
         justify-content: center;
         margin-top: 10px;
         padding-bottom: 20%; } }
+    @media (max-width: 991px) {
+      .skills__graph {
+        justify-content: space-evenly; } }
   .skills__column {
     position: relative; }
     @media (max-width: 767px) {
@@ -422,30 +449,23 @@ ul {
     right: 38px; }
   .skills__circle {
     transform: rotate(-90deg); }
-  .skills__v1 {
-    stroke: #30bae7;
-    animation: complete1 1.9s ease-in-out forwards; }
-@keyframes complete1 {
-  to {
-    stroke-dashoffset: 58; } }
-  .skills__v2 {
-    stroke: #d74680;
-    animation: complete2 1.5s ease-in-out forwards; }
-@keyframes complete2 {
-  to {
-    stroke-dashoffset: 145; } }
-  .skills__v3 {
-    stroke: #15c7a8;
-    animation: complete3 1.4s ease-in-out forwards; }
-@keyframes complete3 {
-  to {
-    stroke-dashoffset: 174; } }
-  .skills__v4 {
-    stroke: #eb7d4b;
-    animation: complete4 1.7s ease-in-out forwards; }
-@keyframes complete4 {
-  to {
-    stroke-dashoffset: 87; } }
+
+.animate .skills__v1 {
+  stroke: #30bae7;
+  animation: complete1 1.9s ease-in-out forwards; }
+
+.animate .skills__v2 {
+  stroke: #d74680;
+  animation: complete2 1.5s ease-in-out forwards; }
+
+.animate .skills__v3 {
+  stroke: #15c7a8;
+  animation: complete3 1.4s ease-in-out forwards; }
+
+.animate .skills__v4 {
+  stroke: #eb7d4b;
+  animation: complete4 1.7s ease-in-out forwards; }
+
 .portfolio {
   background-color: #ffdd99;
   text-align: center; }
@@ -462,6 +482,10 @@ ul {
         padding: 0;
         font-size: 5vw;
         line-height: 17px; } }
+    @media (max-width: 991px) {
+      .portfolio__text {
+        font-size: 4vw;
+        line-height: 26px; } }
   .portfolio__subtitle {
     font-size: 18px;
     margin-top: 15px; }
@@ -556,6 +580,9 @@ ul {
         margin-top: 40px; }
         .about__box:nth-child(1n+3) {
           margin-top: 40px; } }
+    @media (max-width: 991px) {
+      .about__box {
+        width: 50%; } }
   .about__text {
     font-size: 18px; }
   .about__comment {
@@ -571,6 +598,9 @@ ul {
         text-align: center;
         margin: 0 auto;
         padding: 0 10%; } }
+    @media (max-width: 991px) {
+      .about__comment {
+        font-size: 3vw; } }
   .about__name {
     font-size: 24px;
     color: #ffffff;
@@ -581,6 +611,9 @@ ul {
         font-size: 5vw;
         text-align: center;
         margin: 13px auto 0 auto; } }
+    @media (max-width: 991px) {
+      .about__name {
+        font-size: 3.5vw; } }
   .about__prof {
     font-size: 18px;
     color: #ffdd99;
@@ -592,6 +625,9 @@ ul {
         font-size: 5vw;
         text-align: center;
         margin: 0 auto; } }
+    @media (max-width: 991px) {
+      .about__prof {
+        font-size: 3.5vw; } }
   .about__title:after {
     content: "";
     display: block;

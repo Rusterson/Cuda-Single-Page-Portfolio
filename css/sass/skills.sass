@@ -21,6 +21,8 @@
         @media (max-width: $mobile)
             margin-top: 5px
             font-size: 6vw
+        @media (max-width: $tablet)
+            font-size: 4vw
 
     &__text
         font-size: 18px
@@ -29,6 +31,10 @@
         @media (max-width: $mobile)
             padding: 0
             margin: 0 5%
+
+    &__box
+        height: 160px
+        width: 160px
 
     &__graph
         display: flex
@@ -40,6 +46,8 @@
             justify-content: center
             margin-top: 10px
             padding-bottom: 20%
+        @media (max-width: $tablet)
+            justify-content: space-evenly
 
 
     &__column
@@ -58,31 +66,23 @@
     &__circle
         transform: rotate(-90deg)
 
-    &__v1
-        stroke: #30bae7
-        animation: complete1 1.9s ease-in-out forwards
-        @keyframes complete1
-            to
-                stroke-dashoffset: 58
+.animate .skills__v1
+    stroke: #30bae7
+    animation: complete1 1.9s ease-in-out forwards
+   
     
-    &__v2
-        stroke: #d74680
-        animation: complete2 1.5s ease-in-out forwards
-        @keyframes complete2
-            to
-                stroke-dashoffset: 145
+.animate .skills__v2
+    stroke: #d74680
+    animation: complete2 1.5s ease-in-out forwards
+    
 
-    &__v3
-        stroke: #15c7a8
-        animation: complete3 1.4s ease-in-out forwards
-        @keyframes complete3
-            to
-                stroke-dashoffset: 174
+.animate .skills__v3
+    stroke: #15c7a8
+    animation: complete3 1.4s ease-in-out forwards
+    
 
 
-    &__v4
-        stroke: #eb7d4b
-        animation: complete4 1.7s ease-in-out forwards
-        @keyframes complete4
-            to
-                stroke-dashoffset: 87
+.animate .skills__v4
+    stroke: #eb7d4b
+    animation: complete4 1.7s ease-in-out forwards
+   
