@@ -22,8 +22,11 @@
             padding-bottom: 20%
             
 
-    &__photo
-        display: block
+    &__photobk
+        display: flex
+        align-items: center
+        justify-content: center
+        border: 2px solid #3c4761
         width: 200px
         height: 200px
         background-color: #878787
@@ -32,6 +35,11 @@
         @media (max-width: $mobile)
             height: 30vw
             width: 30vw
+
+    &__photo
+        width: 195px
+        height: 195px
+        border-radius: 100px
 
     &__social
         display: flex

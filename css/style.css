@@ -59,6 +59,8 @@ ul {
     .blue3 {
       font-size: 3.5vw; } }
 
+.menu-open .bar {
+  z-index: 2; }
 .menu-open .bar__list {
   opacity: 1;
   z-index: -1;
@@ -169,7 +171,7 @@ ul {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  z-index: 2;
+  z-index: -1;
   display: flex;
   opacity: 0; }
   .bar__logo {
@@ -337,17 +339,24 @@ ul {
         flex-wrap: wrap;
         margin-top: 40px;
         padding-bottom: 20%; } }
-  .team__photo {
-    display: block;
+  .team__photobk {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #3c4761;
     width: 200px;
     height: 200px;
     background-color: #878787;
     border-radius: 100px;
     margin: 0 auto; }
     @media (max-width: 767px) {
-      .team__photo {
+      .team__photobk {
         height: 30vw;
         width: 30vw; } }
+  .team__photo {
+    width: 195px;
+    height: 195px;
+    border-radius: 100px; }
   .team__social {
     display: flex;
     justify-content: center;
@@ -441,27 +450,24 @@ ul {
     @media (max-width: 767px) {
       .skills__column {
         margin-top: 50px; } }
-  .skills__value {
-    font-size: 50px;
-    position: absolute;
-    font-weight: 300;
-    top: 55px;
-    right: 38px; }
   .skills__circle {
     transform: rotate(-90deg); }
 
+.animate .skills__value {
+  font-size: 50px;
+  position: absolute;
+  font-weight: 300;
+  top: 55px;
+  right: 38px; }
 .animate .skills__v1 {
   stroke: #30bae7;
   animation: complete1 1.9s ease-in-out forwards; }
-
 .animate .skills__v2 {
   stroke: #d74680;
   animation: complete2 1.5s ease-in-out forwards; }
-
 .animate .skills__v3 {
   stroke: #15c7a8;
   animation: complete3 1.4s ease-in-out forwards; }
-
 .animate .skills__v4 {
   stroke: #eb7d4b;
   animation: complete4 1.7s ease-in-out forwards; }
@@ -557,17 +563,24 @@ ul {
       .about__hero {
         margin-top: 25px;
         padding-bottom: 20%; } }
-  .about__photo {
-    display: block;
+  .about__photobk {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 100px;
     height: 100px;
     width: 100px;
     background-color: #787878;
+    border: 2px solid #ffffff;
     position: absolute; }
     @media (max-width: 767px) {
-      .about__photo {
+      .about__photobk {
         position: static;
         margin: 0 auto 12px auto; } }
+  .about__photo {
+    height: 96px;
+    width: 96px;
+    border-radius: 100px; }
   .about__box {
     width: 540px;
     position: relative; }

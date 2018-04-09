@@ -13,16 +13,24 @@
             padding-bottom: 20%
 
 
-    &__photo
-        display: block
+    &__photobk
+        display: flex
+        align-items: center
+        justify-content: center
         border-radius: 100px
         height: 100px
         width: 100px
         background-color: #787878
+        border: 2px solid #ffffff
         position: absolute
         @media (max-width: $mobile)
             position: static
             margin: 0 auto 12px auto
+
+    &__photo
+        height: 96px
+        width: 96px
+        border-radius: 100px
 
 
     &__box

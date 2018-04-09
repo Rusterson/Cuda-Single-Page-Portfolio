@@ -13,7 +13,6 @@
     <div class="bar">
         <div class="bar__menu" id="menu">
             <a class="bar__icon" id="icon" href="#"></a>
-            <div class="bar__content"></div>
             <ul class="bar__list">
                 <li class="bar__item"><a class="bar__link" href="#">HOME</a></li>
                 <li class="bar__item"><a class="bar__link" href="#">ABOUT</a></li>
@@ -75,7 +74,10 @@
             <p class="team__text blue">We are a small team of designers and developers, who help brands with big ideas.</p>
             <ul class="team__content">
                 <li class="team__column">
-                    <picture class="team__photo"></picture>
+                    <picture class="team__photobk">
+                        <source srcset="https://randomuser.me/api/portraits/women/50.jpg">
+                        <img class="team__photo">
+                    </picture>
                     <h3 class="team__subtitle blue2">ANNE HATHAWAY</h3>
                     <h4 class="blue3">CEO / Marketing Guru</h4>
                     <p class="blue team__box">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummu nibh euismod tincidunt ut laoreet dolore magna.</p>
@@ -87,7 +89,10 @@
                     </div>
                 </li>
                 <li class="team__column">
-                    <picture class="team__photo"></picture>
+                    <picture class="team__photobk">
+                        <source srcset="https://randomuser.me/api/portraits/women/9.jpg">
+                        <img class="team__photo">
+                    </picture>
                     <h3 class="team__subtitle blue2">KATE UPTON</h3>
                     <h4 class="blue3">Create Director</h4>
                     <p class="blue team__box">Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.</p>
@@ -98,7 +103,10 @@
                     </div>
                 </li>
                 <li class="team__column">
-                    <picture class="team__photo"></picture>
+                    <picture class="team__photobk">
+                        <source srcset="https://randomuser.me/api/portraits/women/49.jpg">
+                        <img class="team__photo">
+                    </picture>
                     <h3 class="team__subtitle blue2">OLIVIA WILDE</h3>
                     <h4 class="blue3">Lead Designer</h4>
                     <p class="blue team__box">Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.</p>
@@ -110,7 +118,10 @@
                    </div>
                 </li>
                 <li class="team__column">
-                    <picture class="team__photo"></picture>
+                    <picture class="team__photobk">
+                        <source srcset="https://randomuser.me/api/portraits/women/81.jpg">
+                        <img class="team__photo">
+                    </picture>
                     <h3 class="team__subtitle blue2">ASHLEY GREENE</h3>
                     <h4 class="blue3">SEO / Developer</h4>
                     <p class="blue team__box">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
@@ -134,7 +145,7 @@
                         <circle id="circle" class="skills__v1"  cx="96" cy="96" r="92"/>
                         </svg>
                     </div>
-                    <p class="skills__value blue" data-count="90" id="v1"></p>
+                    <p class="skills__value blue" animate data-count="90" id="v1"></p>
                     <h3 class="skills__subtitle blue">WEB DESIGN</h3>
                 </li>
                 <li class="skills__column">
@@ -143,7 +154,7 @@
                         <circle id="circle" class="skills__v2" cx="96" cy="96" r="92"/>
                         </svg>
                     </div>
-                    <p class="skills__value  blue" data-count="75" id="v2"></p>
+                    <p class="skills__value blue" animate data-count="75" id="v2"></p>
                     <h3 class="skills__subtitle blue">HTML / CSS</h3>
                 </li>
                 <li class="skills__column">
@@ -152,7 +163,7 @@
                         <circle id="circle" class="skills__v3" cx="96" cy="96" r="92"/>
                         </svg>
                     </div>
-                    <p class="skills__value blue" data-count="70" id="v3"></p>
+                    <p class="skills__value blue" animate data-count="70" id="v3"></p>
                     <h3 class="skills__subtitle blue">GRAPHIC DESIGN</h3>
                 </li>
                 <li class="skills__column">
@@ -161,7 +172,7 @@
                         <circle id="circle" class="skills__v4" cx="96" cy="96" r="92"/>
                         </svg>
                     </div>
-                    <p class="skills__value blue" data-count="85" id="v4"></p>
+                    <p class="skills__value blue" animate data-count="85" id="v4"></p>
                     <h3 class="skills__subtitle blue">UI / UX</h3>
                 </li>
             </ul>
@@ -212,25 +223,37 @@
             <p class="about__text white">Our clients love us!</p>
             <ul class="about__hero">
                 <li class="about__box">
-                    <picture class="about__photo"></picture>
+                    <picture class="about__photobk">
+                        <source srcset="https://randomuser.me/api/portraits/men/37.jpg">
+                        <img class="about__photo">
+                    </picture>
                     <p class="about__comment">"Nullam dapbus blandit orci, viverra gravida dui labortis eget. Maecenas fringilla urna eu nisl scelerisque"</p>
                     <h3 class="about__name">CHANEL IMAN</h3>
                     <h4 class="about__prof">CEO of Pinterest</h4>
                 </li>
                 <li class="about__box">
-                    <picture class="about__photo"></picture>
+                    <picture class="about__photobk">
+                        <source srcset="https://randomuser.me/api/portraits/women/28.jpg">
+                        <img class="about__photo">
+                    </picture>
                     <p class="about__comment">"Vivamus luctus urna sed urna ultricies ac tempor aui sagittis. In condimentum facilisis porta."</p>
                     <h3 class="about__name">ADRIANA LIMA</h3>
                     <h4 class="about__prof">Founder of Instagran</h4>
                 </li>
                 <li class="about__box">
-                    <picture class="about__photo"></picture>
+                    <picture class="about__photobk">
+                        <source srcset="https://randomuser.me/api/portraits/women/22.jpg">
+                        <img class="about__photo">
+                    </picture>
                     <p class="about__comment">"Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentaum facilisis porta."</p>
                     <h3 class="about__name">ANNE HATHAWAY</h3>
                     <h4 class="about__prof">Lead Designer at Behance</h4>
                 </li>
                 <li class="about__box">
-                    <picture class="about__photo"></picture>
+                    <picture class="about__photobk">
+                        <source srcset="https://randomuser.me/api/portraits/women/25.jpg">
+                        <img class="about__photo">
+                    </picture>
                     <p class="about__comment">"Phasellus non purus vei arcu tempor commodo. Fuse semper, purus vel luctus molestie, risus sem cursus neque."</p>
                     <h3 class="about__name">EMMA STONE</h3>
                     <h4 class="about__prof">Co-Founder of Shazam</h4>
