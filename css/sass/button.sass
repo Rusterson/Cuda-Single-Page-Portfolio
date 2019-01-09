@@ -8,13 +8,13 @@
     cursor: pointer
     font-size: 18px
     margin-top: 60px
-    transition: transform 500ms ease
+    transition: 100ms transform ease, 500ms opacity
     @media (max-width: $mobile)
         width: 50%
         font-size: 4vw
     
     &:active 
-        transform: translateY(3px)
+        transform: translateY(12px)
 
     &--orange
         background-color: #eb7d4b
@@ -27,4 +27,7 @@
     &--blue
         background-color: #30bae7
         border-color: #299ec5
+
+    &:hover
+        opacity: 0.7
     
