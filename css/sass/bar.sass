@@ -50,6 +50,9 @@
     &__top
         color: #ffffff
         position: relative
+        opacity: 0
+        transition: 1500ms opacity
+
 
         &:after
             content: ''
@@ -84,8 +87,6 @@
             right: 18px
             border-radius: 80px
 
-    &__icone
-         
 
     &__list
         display: block
@@ -109,7 +110,7 @@
     &__link
         color: #ffffff
         font-size: 22px
-      
 
     @media (max-width: $mobile)
         opacity: 1
+        z-index: 3

@@ -1,0 +1,70 @@
+.top
+  width: 65px
+  height: 65px
+  border-radius: 50%
+  background: rgba(0,0,0,0.21)
+  cursor: pointer
+  position: fixed
+  bottom: 5%
+  right: 5%
+  z-index: 5
+  transition: 450ms transform, 450ms opacity
+  opacity: 0
+  
+  &:hover
+    transform: scale3d(1.2,1.2,1)
+
+  &__js--show
+    opacity: 1
+
+  &__js--hide
+    opacity: 0
+  
+
+  &:hover .arrow--one
+    animation: Move 800ms ease-in-out 400ms infinite
+
+  &:hover .arrow--two
+    animation: Move 800ms ease-in-out infinite
+
+  &:hover .arrow
+    opacity: 0
+    top: 80%
+
+.arrow
+  opacity: 1
+  height: 25px
+  width: 25px
+  display: block
+  top: 49%
+  left: 50%
+  //transform-origin: 50% 50%
+  transform: translate(-50%, -50%)
+  position: absolute
+
+  &:before,
+  &:after
+    content: ""
+    display: block
+    width: 25px
+    background-color: #ffffff
+    height: 6px
+    position: absolute
+    top: 40%
+
+  &:before
+    transform: rotate(45.5deg) translateX(30%)
+    transform-origin: top right
+
+  &:after
+    transform: rotate(-45.5deg) translateX(-30%)
+    transform-origin: top left
+
+@keyframes Move
+  0%
+    opacity: 0
+  75%
+    opacity: 1
+  100%
+    opacity: 0
+    top: 28%

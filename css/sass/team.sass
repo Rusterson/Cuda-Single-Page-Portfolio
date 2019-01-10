@@ -82,7 +82,14 @@
 
     &__svg
         fill: #bdd1df
+        transition: 550ms transform
 
+        &:hover
+            transform: rotateX(360deg)
 
     &__link
         margin: 0 5px
+        transition: 650ms transform
+
+        &:hover
+            transform: scale3d(1.5,1.5,1)
