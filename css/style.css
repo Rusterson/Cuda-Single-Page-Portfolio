@@ -1141,6 +1141,12 @@ ul {
 .top__js--show {
   opacity: 1;
 }
+@media (max-width: 767px) {
+  .top {
+    opacity: 0;
+    z-index: 1;
+  }
+}
 .top__js--hide {
   opacity: 0;
 }
