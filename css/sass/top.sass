@@ -7,8 +7,8 @@
   position: fixed
   bottom: 5%
   right: 5%
-  z-index: 5
-  transition: 450ms transform, 450ms opacity
+  z-index: -3
+  transition: all 480ms
   opacity: 0
   
   &:hover
@@ -16,6 +16,7 @@
 
   &__js--show
     opacity: 1
+    z-index: 5
 
   @media (max-width: $mobile)
     opacity: 0

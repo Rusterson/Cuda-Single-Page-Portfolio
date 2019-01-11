@@ -1,4 +1,4 @@
-$tablet: 991px
+$tablet: 780px
 $mobile: 767px
 *,
 *:before,
@@ -15,6 +15,9 @@ body
     margin: 0 auto
     width: 72%
     position: relative
+
+    @media (max-width: $tablet)
+        width: 90%
 
 a 
     text-decoration: none
