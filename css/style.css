@@ -16,7 +16,7 @@ body {
   width: 72%;
   position: relative;
 }
-@media (max-width: 780px) {
+@media (max-width: 860px) {
   .container {
     width: 90%;
   }
@@ -34,6 +34,11 @@ ul {
   font-size: 42px;
   letter-spacing: 2px;
   padding-top: 100px;
+}
+@media (max-width: 860px) {
+  .title {
+    font-size: 28px;
+  }
 }
 
 .white {
@@ -129,6 +134,11 @@ ul {
   height: 100vh;
   text-align: center;
   background-color: #87509c;
+}
+@media (max-width: 860px) {
+  .header {
+    padding-top: 25px;
+  }
 }
 .header__container {
   display: flex;
