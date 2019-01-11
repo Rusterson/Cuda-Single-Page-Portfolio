@@ -320,10 +320,9 @@ ul {
   background-color: #17c2a4;
   text-align: center;
 }
-@media (max-width: 767px) {
-  .services__icons {
-    height: 20vw;
-  }
+.services__icons {
+  width: 160px;
+  height: 160px;
 }
 .services__content {
   display: flex;
@@ -332,7 +331,9 @@ ul {
   padding-bottom: 100px;
 }
 .services__column {
-  width: 260px;
+  width: 265px;
+  height: 330px;
+  padding: 5px;
 }
 @media (max-width: 767px) {
   .services__column {
@@ -344,12 +345,6 @@ ul {
   font-size: 24px;
   margin-bottom: 22px;
   margin-top: 45px;
-}
-@media (max-width: 767px) {
-  .services__subtitle {
-    margin: 2vw 0;
-    font-size: 6vw;
-  }
 }
 .services__title:after {
   content: "";
