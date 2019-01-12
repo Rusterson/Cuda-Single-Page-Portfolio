@@ -4,8 +4,9 @@
 
     &__links
         display: flex
-        padding: 45px 0
-        justify-content: space-evenly
+        padding: 25px 0
+        justify-content: space-around
+        align-items: center
 
     &__link
         color: #ffffff
@@ -13,9 +14,15 @@
         font-weight: 600
         transition: 400ms color
 
+        @media (max-width: $mobile)
+            display: none
+
         &:hover
             color: #30bae7
             
     &__log
         display: none
         fill: #ffffff
+
+        @media (max-width: $mobile)
+            display: block

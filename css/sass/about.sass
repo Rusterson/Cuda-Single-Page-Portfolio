@@ -20,6 +20,12 @@
         background-color: #787878
         border: 2px solid #ffffff
         position: absolute
+
+        @media (max-width: $mobile)
+            display: block
+            position: unset
+            float: left
+            margin-right: 5px
             
 
     &__photo
@@ -30,7 +36,7 @@
 
     &__box
         width: 560px
-        height: 160px
+
         padding: 10px
         margin: 22px
         box-shadow: 2px 2px 40px #9c3e63
@@ -48,11 +54,20 @@
         text-align: left
         font-weight: 300
 
+        @media (max-width: $mobile)
+            font-size: 19px
+            margin: auto
+
     &__name
         font-size: 24px
         color: #ffffff
         margin: 15px 0 0 150px
         text-align: left
+
+        @media (max-width: $mobile)
+            font-size: 20px
+            margin: auto
+            text-align: right
         
     &__prof
         font-size: 18px
@@ -60,6 +75,11 @@
         margin-left: 150px
         text-align: left
         font-weight: 300
+
+        @media (max-width: $mobile)
+            font-size: 15px
+            margin: auto
+            text-align: right
 
     &__title
         &:after
