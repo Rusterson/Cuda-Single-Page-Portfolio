@@ -122,10 +122,6 @@ ul {
   opacity: 0;
 }
 
-.show {
-  opacity: 1;
-}
-
 .backTo-top {
   opacity: 0;
 }
@@ -245,6 +241,7 @@ ul {
 .bar__menu {
   height: 50px;
   position: relative;
+  width: 50px;
 }
 .bar__icon {
   align-content: center;
@@ -278,6 +275,7 @@ ul {
   position: relative;
   opacity: 0;
   transition: 1200ms opacity;
+  width: 50px;
 }
 .bar__top:after {
   content: "";
