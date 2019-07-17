@@ -122,12 +122,16 @@ ul {
   opacity: 0;
 }
 
-.cd-top2--fade-out {
+.show {
+  opacity: 1;
+}
+
+.backTo-top {
   opacity: 0;
 }
 
-.js_top--show .bar__top {
-  opacity: 1;
+.cd-top2--fade-out {
+  opacity: 0;
 }
 
 .header {
@@ -162,6 +166,7 @@ ul {
     visibility: hidden;
   }
 }
+
 .nav {
   position: absolute;
   right: 0;
@@ -272,7 +277,7 @@ ul {
   color: #ffffff;
   position: relative;
   opacity: 0;
-  transition: 1500ms opacity;
+  transition: 1200ms opacity;
 }
 .bar__top:after {
   content: "";
@@ -833,8 +838,8 @@ ul {
 }
 
 .top {
-  width: 65px;
-  height: 65px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.21);
   cursor: pointer;
@@ -842,11 +847,10 @@ ul {
   bottom: 5%;
   right: 5%;
   z-index: -3;
-  transition: all 480ms;
-  opacity: 0;
+  transition: opacity 1200ms;
 }
 .top:hover {
-  transform: scale3d(1.2, 1.2, 1);
+  transform: scale(1.1, 1.1);
 }
 .top__js--show {
   opacity: 1;
@@ -874,8 +878,8 @@ ul {
 
 .arrow {
   opacity: 1;
-  height: 25px;
-  width: 25px;
+  height: 15px;
+  width: 15px;
   display: block;
   top: 49%;
   left: 50%;
@@ -885,9 +889,9 @@ ul {
 .arrow:before, .arrow:after {
   content: "";
   display: block;
-  width: 25px;
+  width: 15px;
   background-color: #ffffff;
-  height: 6px;
+  height: 4px;
   position: absolute;
   top: 40%;
 }
@@ -911,6 +915,10 @@ ul {
     opacity: 0;
     top: 28%;
   }
+}
+.show {
+  opacity: 1;
+  z-index: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
